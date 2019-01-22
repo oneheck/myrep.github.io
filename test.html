@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bootstrap-iso">
+        <div class="container-fluid">
+         <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+           <form method="post">
+            <div class="form-group ">
+             <label class="control-label " for="name">
+              Name
+             </label>
+             <input class="form-control" id="name" name="name" type="text"/>
+            </div>
+            <div class="form-group ">
+             <label class="control-label requiredField" for="email">
+              Email
+              <span class="asteriskField">
+               *
+              </span>
+             </label>
+             <input class="form-control" id="email" name="email" type="text"/>
+            </div>
+            <div class="form-group ">
+             <label class="control-label " for="subject">
+              Subject
+             </label>
+             <input class="form-control" id="subject" name="subject" type="text"/>
+            </div>
+            <div class="form-group ">
+             <label class="control-label " for="message">
+              Message
+             </label>
+             <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+            </div>
+            <div class="form-group ">
+             <label class="control-label " for="name1">
+              Design
+             </label>
+             <input class="form-control" id="name1" name="name1" placeholder="Design" type="text"/>
+            </div>
+            <div class="form-group">
+             <div>
+              <button class="btn btn-primary " name="submit" type="submit">
+               Submit
+              </button>
+             </div>
+            </div>
+           </form>
+          </div>
+         </div>
+        </div>
+       </div>
+      
+
+</body>
+</html>
+$(window).load(function(){
+    if($('.gotopbtn').length){
+      var scrollTrigger = 100,
+          gotopbtn = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger){
+              $('.gotopbtn').addClass('show');
+            } else {
+              $('.gotopbtn').removeClass('show');
+            }
+          };
+          backToTop();
+          $(window).on('scroll', function (){
+              backToTop();
+          });
+          $('.gotopbtn').on('click', function (e){
+            e.preventDefault();
+            $('html,body').animate({
+              scrollTop:0
+            }, 700)
+          });
+    }
+  }); 
