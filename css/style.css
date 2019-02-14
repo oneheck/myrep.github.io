@@ -6,7 +6,6 @@ body {
   width: 100%;
   background: black;
 }
-
 .gotopbtn {
   position: fixed;
   width: 40px;
@@ -41,13 +40,21 @@ body {
   font-size: 1.3rem;
 }
 .lux {
-  font-size: 20px;
+  font-size: 15px;
 }
 .navbar-toggler:not(:disabled):not(.disabled) {
   cursor: pointer;
   background: white;
-  color: red;
+  border: 1px solid white;
 }
+.navbar-toggler {
+ background-color: green !important;
+}
+.navbar-toggler-icon {
+  background-color: white!important;
+}
+
+
 .bark {
   background-color: #333;
   margin: 0 auto;
@@ -57,11 +64,10 @@ body {
   background-color: black;
   color: white;
 }
-#hoz .gs1 h4{
+.gs1 {
+  padding-top: 100px;
   color: white;
   text-align: center;
-  font-family: sans-serif;
-  font-size: 20px!important;
 }
 .hut {
   background-color: black;
@@ -78,7 +84,6 @@ body {
   animation-duration: 8s;
   animation-delay: 2ms;
   animation-fill-mode: forwards;
-
 }
 @keyframes flow-6 {
   0% {
@@ -1104,7 +1109,7 @@ slide p {
 /*-----------------------Footer---------------------*/
 #footer {
   margin-top: 10px;
-  padding: 10px;
+  padding: 100px;
   background-color: black;
   color: #181a1dd0;
 }
@@ -1131,9 +1136,11 @@ slide p {
   text-align: left;
 }
 
-#footer .city {
- margin-left: 37px;
+#footer .ad1 {
+ margin-left: 50px;
+ font-size: 12px;
 }
+
 #footer .row .fa {
  padding: 10px 10px ;
  margin-right: 10px;
@@ -1191,15 +1198,7 @@ slide p {
   }
  }
 
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { ... }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-/* ----------------------End Queries ------------------------*/
 
 /*--------------------------wall partition styles----------------*/
 #section-001 img {
@@ -1319,15 +1318,34 @@ slide p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*-----------------------End wall partition -----------------*/
+
+/*---------------Media Querry----------------------*/
+@media only screen and (max-width: 600px){
+  
+  
+  #footer {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: #181a1dd0;
+    padding-bottom: 20px;
+  }
+  #footer .copyright {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+   
+}
+}
+@media only screen and (orientation:landscape){
+  #hoz .col-sm-6 {
+    background-color:none;
+    text-align: center;
+    margin:0 auto;
+    
+    padding: 10px 10px;
+    
+  }
+}
