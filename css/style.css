@@ -11,7 +11,7 @@ body {
   width: 40px;
   height: 40px;
   background: red;
-  bottom: 80px;
+  bottom: 40px;
   right: 32px;
   text-decoration: none;
   text-align: center;
@@ -51,7 +51,7 @@ body {
  background-color: green !important;
 }
 .navbar-toggler-icon {
-  background-color: white!important;
+  background-color:transparent;
 }
 
 
@@ -64,11 +64,22 @@ body {
   background-color: black;
   color: white;
 }
+/*----------------for the other side of the carousel---------------*/
 .gs1 {
-  padding-top: 100px;
   color: white;
   text-align: center;
+  font-size: 15px !important;
 }
+h4 {
+  font-size: 1.5em!important;
+  padding-right: 40px;
+  font-family: Robot!important;
+}
+
+ .text-justify {
+  text-align: justify!important;
+  margin-top: 100px !important;
+ }
 .hut {
   background-color: black;
   text-align: justify;
@@ -76,6 +87,7 @@ body {
 .hed {
   color: red;
   font-weight: bolder;
+  text-align:center;
 }
 
 .flow-6 {
@@ -636,7 +648,12 @@ hr {
   text-align: center;
 }
 /* End gallery*/
-
+.section-2 img{
+  height: 20vh;
+  width: 20vh;
+  text-align: center;
+  margin: 0 auto;
+}
 .gallery-block .heading h2 {
   font-weight: bold;
   font-size: 1.4rem;
@@ -746,6 +763,7 @@ textarea:focus {
   color: red !important;
 }
 /*for quote page*/
+
 .halt {
   text-align: center;
   text-transform: uppercase;
@@ -759,6 +777,10 @@ textarea:focus {
   background-color: red;
 }
 /* for store*/
+.gallery-block h1 {
+  color: black;
+  text-align: center;
+}
 .storeback {
   background-color: white;
   color: white;
@@ -780,6 +802,7 @@ textarea:focus {
 }
 .heade h2 {
   color: black;
+  font-size: 20px;
 }
 /*End store*/
 
@@ -1185,7 +1208,7 @@ slide p {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  .iframe {
+  .iframe{
     background-color: red !important;
     width: 400px;
   }
@@ -1336,9 +1359,146 @@ slide p {
     text-align: center;
     font-size: 15px;
     color: white;
-   
 }
+.gs1 {
+  color: white;
+  text-align: center;
+  font-size: 15px !important;
 }
+h4 {
+  font-size: 1.2em!important;
+  padding: 20px;
+  font-family: Robot!important;
+  margin-top: 20px !important;
+}
+#hape {
+  height: 30vh;
+}
+
+.carousel img {
+  width: 100%;
+  height: 40vh;
+}
+ .text-justify {
+  text-align: justify!important;
+  margin-top: 60px !important;
+ }
+ .col-md-12 .btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  padding-top: 5px!important;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  width: 150px;
+  height: 40px;
+}
+.heading {
+  margin-bottom: 20px !important;
+  text-align: center;
+  color: red;
+}
+.gallery-block.cards-gallery .card img {
+  box-shadow: 0px 2px 20px white;
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-position: fixed;
+}
+.tall {
+  border: solid 3px red;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+  margin: 0;
+  font-size: 20px;
+}
+.section-2 img{
+  height: 30vh;
+  width: 30vh;
+  text-align: center;
+  margin: 0 auto;
+}
+.flow-2, .flow-1 {
+  position: none;
+  animation: none;
+  animation-duration: 10s;
+  animation-delay: 2ms;
+  animation-fill-mode: forwards;
+}
+.navbar-toggler {
+  background-color: rgb(218, 106, 32) !important;
+ }
+ .custom-toggler.navbar-toggler {
+  border-color: rgb(252, 12, 12)!important;
+}
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.fa.fa-navicon {
+  color: white;
+}
+.gotopbtn {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background: red;
+  bottom: 40px;
+  right: 32px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color:  white;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 15px;
+  
+}
+.switch2 {
+  position: relative;
+  animation-name: myswitch2;
+  animation-duration: 60s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: no-repeat center center;
+}
+.section-3 .text-justify  {
+ margin-top: 5px !important;
+}
+.heade h2 {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+/*-------for store---------------*/
+.gallery-block h1 {
+  color: black;
+  text-align: center;
+}
+.gallery-block .container {
+  margin-top: -20px!important;
+}
+.gallery-block .shrt{
+  width: 40%;
+  margin-top: -10px;
+}
+ }
+
 @media only screen and (orientation:landscape){
   #hoz .col-sm-6 {
     background-color:none;
