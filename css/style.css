@@ -1531,6 +1531,10 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   padding-top: 0px!important;
   margin-top:-20px;
 }
+#faq-section .text-center h1 {
+  text-align: center!important;
+  margin-top:-60px !important;
+}
  }
 
 @media only screen and (orientation:landscape){
