@@ -75,7 +75,9 @@ h4 {
   padding-right: 40px;
   font-family: Robot!important;
 }
-
+.section-3 p {
+  margin-top: -5px !important;
+}
  .text-justify {
   text-align: justify!important;
   margin-top: 100px !important;
