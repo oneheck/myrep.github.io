@@ -1515,6 +1515,13 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   width: 40%;
   margin-top: -10px;
 }
+.gallery-block .header h2 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: red;
+  margin-top: 20px;
+}
  }
 */
 @media only screen and (orientation:landscape){
